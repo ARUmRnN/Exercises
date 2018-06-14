@@ -1,5 +1,10 @@
+import java.io.*;
+
 class Main {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    br.readLine();
+
     String[] samples = {"Madam, I'm Adam!","Madam","Дед","Яблоко","ZЯблокоAZ","Apple","Дед, а дед ...","8118","a...!","Ъабаъ"};
 
     System.out.println("Method isPalindrome1");
@@ -12,6 +17,8 @@ class Main {
     for (String s : samples) {
       System.out.println("\"" + s + "\": " + (isPalindrome2(s) ? "is palindrome" : "is not palindrome"));
     }
+
+    br.readLine();
   }
 
   public static boolean isPalindrome1(String str) {
