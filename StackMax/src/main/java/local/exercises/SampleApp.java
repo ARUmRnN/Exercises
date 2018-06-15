@@ -6,7 +6,7 @@ import java.io.IOException;
 
 class SampleApp {
   public static void main(String[] args) throws IOException {
-    StackMax<Integer> stack = new StackMax<>();
+    StackMax<Object> stack = new StackMax<>();
 
     try (BufferedReader bf = new BufferedReader(new InputStreamReader(System.in))) {
       int num = Integer.parseInt(bf.readLine());
