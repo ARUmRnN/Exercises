@@ -13,25 +13,21 @@ A program simulating a stack that can effectively return the current max element
 
 There are three types of commands:
 
-push v - add an element (v) to a top of the stack;
-pop - remove the top element of the stack;
-max - return the current max in the stack.
+`push v` - add an element (v) to a top of the stack;
+`pop` - remove the top element of the stack;
+`max` - return the current max in the stack.
+
 The time complexity of these operations should not depend on the stack size (constant time, O(1)).
 
-Hint: you may use several standard stacks to write a solution.
-
-Input data format
------------------
+### Input data format ###
 
 The first line contains the number of commands. Next lines contain one of the following commands: push v, pop, max.
 
-Output data format
-------------------
+### Output data format ###
 
 The program must output the current max for each command max.
 
-Sample Input
-------------
+### Sample Input ###
 5
 push 2
 push 1
@@ -39,7 +35,6 @@ max
 pop
 max
 
-Sample Output
--------------
+### Sample Output ###
 2
 2
